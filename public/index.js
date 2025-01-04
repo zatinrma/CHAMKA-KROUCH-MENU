@@ -15,10 +15,10 @@ function show_hide_immediate_change_menu() {
     var btn_immediate_menu_change = document.getElementById("btn_immediate_menu_change");
     if (immediate_menu_change.style.display === "none") {
         immediate_menu_change.style.display = "block"
-        btn_immediate_menu_change.innerText = "Hide 3 Seconds Menu"
+        btn_immediate_menu_change.innerText = "Hide 5 Seconds Menu"
     } else {
         immediate_menu_change.style.display = "none";
-        btn_immediate_menu_change.innerText = "Show 3 Seconds Menu"
+        btn_immediate_menu_change.innerText = "Show 5 Seconds Menu"
     }
 }
 
@@ -27,10 +27,10 @@ function show_hide_immediate_fade_change_menu() {
     var btn_immediate_fade_menu_change = document.getElementById("btn_immediate_fade_menu_change");
     if (immediate_fade_menu_change.style.display === "none") {
         immediate_fade_menu_change.style.display = "block"
-        btn_immediate_fade_menu_change.innerText = "Hide 3 Seconds Fade Menu"
+        btn_immediate_fade_menu_change.innerText = "Hide 5 Seconds Fade Menu"
     } else {
         immediate_fade_menu_change.style.display = "none";
-        btn_immediate_fade_menu_change.innerText = "Show 3 Seconds Fade Menu"
+        btn_immediate_fade_menu_change.innerText = "Show 5 Seconds Fade Menu"
     }
 }
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 3000); // Change image every 3 seconds
+        setTimeout(showSlides, 5000); // Change image every 5 Seconds
     }
 
     // 2# DYNAMIC WITH NO EFFECT
@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         './Image/P1.jpg',
         './Image/P2.jpg',
         './Image/P3.jpg',
+        './Image/P4.jpg',
         './Image/P5.jpg',
         './Image/P6.jpg',
         './Image/P7.jpg',
@@ -72,10 +73,11 @@ document.addEventListener("DOMContentLoaded", function () {
         './Image/P11.jpg',
     ]
     function random_interval() {
-        let random_1 = Math.floor(Math.random() * 13);  // Java Script List has quantity 13 file starting in list from 0 - 12
+        let random_1 = Math.floor(Math.random() * 10);  // Java Script List has quantity 13 file starting in list from 0 - 12
         let random_2 = random_1
-        if (random_1 == 13) {
-            random_2 = random_1 - 1
+        console.log('11111111', random_1)
+        if (random_1 == 10) {
+            random_2 = random_1 + 1
         }
         else {
             random_2 = random_1 + 1
@@ -83,6 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
         image_1.src = images[random_1];
         image_2.src = images[random_2];
     }
-    setInterval(random_interval, 2000)
+    setInterval(random_interval, 3000)
 });
 

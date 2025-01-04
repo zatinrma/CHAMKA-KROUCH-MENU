@@ -117,7 +117,7 @@ footer {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
-    font-size: 8px
+    font-size: 12px
   }
 }
 /* 3# DYNAMIC WITH FADE EFFECT */
@@ -193,6 +193,10 @@ footer {
   white-space: nowrap; /* Force items to stay in one row */
   padding: 0 10px;
   margin-bottom: 0.3rem;
+  box-shadow: 0 3px 5px rgba(0, 255, 0, 0.5), 0 0 15px rgba(0, 255, 0, 0.75);
+}
+#food_group_id {
+  margin-top: 1rem !important;
 }
 
 .header img {
@@ -232,7 +236,7 @@ a:hover {
   }
 
   a {
-    font-size: 7.8px; /* Smaller font size for mobile */
+    font-size: 8.8px; /* Smaller font size for mobile */
     padding: 2px;
     margin: 0 3px;
   }
@@ -254,10 +258,10 @@ a:hover {
   }
 
   a {
-    font-size: 12px; /* Smaller font size for mobile */
+    font-size: 14px; /* Smaller font size for mobile */
     padding: 5px;
     margin: 0 5px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.45px;
   }
 
   .header img {
@@ -265,7 +269,7 @@ a:hover {
   }
 
   .header h6 {
-    font-size: 18px; /* Adjust text size for mobile */
+    font-size: 21px; /* Adjust text size for mobile */
     text-shadow: 0 0 1px currentColor, 0 0 1.5px currentColor, 0 0 4px currentColor;
   }
 }

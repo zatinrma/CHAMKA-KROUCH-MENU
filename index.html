@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>អាហារដ្ឋានធម្មជាតិចំការក្រូច</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="header d-flex justify-content-center align-items-center">
+    <!-- Image -->
+    <!-- Text -->
+    <h6 class="mb-0">អាហារដ្ឋានធម្មជាតិចំការក្រូច</h6>
+
+    <!-- Navigation Links -->
+    <a href="#top">មុខម្ហូប</a>
+    <a href="#addons_group_id">អាហារសម្រន់</a>
+    <a href="#beverage_group_id">ភេសជ្ជៈ​​</a>
+    <a href="#contact_us_id">ទំនាក់ទំនង</a>
+    <!-- Add more categories as needed -->
+  </div>
+  <!-- 1# STATIC -->
+  <div class="container" id="static_menu">
+    <div class="d-flex align-items-center product-card box-shadow-full" &ZeroWidthSpace;="" id="food_group_id">
+      <!-- Left Line -->
+      <div class="line"></div>
+      <!-- Centered Text -->
+      <span class="mx-3">មុខម្ហូប</span>
+      <!-- Right Line -->
+      <div class="line"></div>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P4.jpg"/>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P5.jpg"/>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P6.jpg"/>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P7.jpg"/>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P8.jpg"/>
+    </div>
+    <div class="d-flex align-items-center product-card box-shadow-full" &ZeroWidthSpace;="" id="addons_group_id">
+      <!-- Left Line -->
+      <div class="line"></div>
+      <!-- Centered Text -->
+      <span class="mx-3">អាហារសម្រន់</span>
+      <!-- Right Line -->
+      <div class="line"></div>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P3.jpg"/>
+    </div>
+    <div class="d-flex align-items-center product-card box-shadow-full" &ZeroWidthSpace;="" id="beverage_group_id">
+      <!-- Left Line -->
+      <div class="line"></div>
+      <!-- Centered Text -->
+      <span class="mx-3">ភេសជ្ជៈ</span>
+      <!-- Right Line -->
+      <div class="line"></div>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P9.jpg"/>
+    </div>
+    <div class="d-flex align-items-center product-card box-shadow-full" &ZeroWidthSpace;="" id="contact_us_id">
+      <!-- Left Line -->
+      <div class="line"></div>
+      <!-- Centered Text -->
+      <span class="mx-3">ទំនាក់ទំនង</span>
+      <!-- Right Line -->
+      <div class="line"></div>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P11.jpg"/>
+    </div>
+    <div class="card box-shadow-full text-center">
+      <img src="./Image/P10.jpg"/>
+    </div>
+  </div>
+  <!-- 1# END STATIC -->
+  <!-- 2# DYNAMIC WITH NO EFFECT -->
+  <div class="container mt-3" id="immediate_menu_change" style="display: none;">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card product-card box-shadow-full">
+          <div>
+            <img id="slide_img_1" src="./Image/P1.jpg" class="img-fluid" alt="Menu Page">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card product-card box-shadow-full">
+          <div>
+            <img id="slide_img_2" src="./Image/P2.jpg" class="img-fluid" alt="Menu Page">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 2# END DYNAMIC WITH NO EFFECT -->
+  <!-- // 3# DYNAMIC WITH FADE EFFECT -->
+  <div class="container mt-3" id="immediate_fade_menu_change" style="display: none;">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card product-card box-shadow-full slideshow-container">
+          <div class="mySlides fade_customize">
+            <div class="numbertext">1 / 11</div>
+            <img id="slide_img_1" src="Image/P1.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">1</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">2 / 11</div>
+            <img id="slide_img_1" src="Image/P2.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">11</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">3 / 11</div>
+            <img id="slide_img_1" src="Image/P3.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">3</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">4 / 11</div>
+            <img id="slide_img_1" src="Image/P4.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">4</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">5 / 11</div>
+            <img id="slide_img_1" src="Image/P5.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">5</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">6 / 11</div>
+            <img id="slide_img_1" src="Image/P6.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">6</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">7 / 11</div>
+            <img id="slide_img_1" src="Image/P7.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">7</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">8 / 11</div>
+            <img id="slide_img_1" src="Image/P8.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">8</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">9 / 11</div>
+            <img id="slide_img_1" src="Image/P9.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">9</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">10 / 11</div>
+            <img id="slide_img_1" src="Image/P10.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">10</div>
+          </div>
+          <div class="mySlides fade_customize">
+            <div class="numbertext">11 / 11</div>
+            <img id="slide_img_1" src="Image/P11.jpg" class="img-fluid" alt="Menu Page">
+            <div class="text">11</div>
+          </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // 3# END DYNAMIC WITH FADE EFFECT -->
+
+  <!-- # END : STYLING BUTTON -->
+  <div class="container mt-3">
+    <hr>
+    <!-- Button t rigger modal -->
+    <div class="text-center">
+      <button type="button" class="btn btn-primary project-button" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        STYLING
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header modal_customize">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-grid gap-2">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" id="btn_static_menu" onclick="show_hide_static_menu()"
+                  type="button">Hide Static Menu</button>
+                <button class="btn btn-success" id="btn_immediate_menu_change"
+                  onclick="show_hide_immediate_change_menu()" type="button">Show 3 Seconds Menu</button>
+                <button class="btn btn-danger" id="btn_immediate_fade_menu_change"
+                  onclick="show_hide_immediate_fade_change_menu()" type="button">Show 3 Seconds Fade Menu</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</body>
+<footer class="text-center">
+  <div class="copyright-box">
+    <p>Developed by<strong> PanzerDigital (+855 99683137)</strong></p>
+  </div>
+</footer>
+
+</html>
